@@ -1,0 +1,103 @@
+:root{
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Veryblue: hsl(229, 23%, 23%);
+    --Darkblue: hsl(227, 10%, 46%);
+    --Darkgray: hsl(0, 0%, 59%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    background-color: var(--Darkcyan);
+    margin: 0 auto;
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    flex-direction: row;
+}
+
+.c1 img{
+    position: absolute;
+    top: -250px;
+    left: -250px; 
+    max-width: 500px;
+}
+
+.c2 img{
+    position: absolute;
+    bottom: -250px;
+    right: -250px; 
+    max-width: 500px;   
+}
+
+.card{
+    position: relative;
+    width: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.card .bck img{
+    border-radius: 10px 10px 0 0;
+
+}
+
+.card .pic img{
+    text-align: center;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-top: -50px;
+}
+
+h1{
+    margin: 20px 0;
+    font-size: 18px;
+    color: var(--Veryblue);
+}
+
+h1 span{
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+p, span{
+    color: var(--Darkblue);
+}
+
+p{
+    padding-bottom: 20px;
+}
+
+.numbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid var(--Darkgray);
+}
+
+.numbox .valbox{
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.valbox h2{
+    color: var(--Veryblue);
+    padding-bottom: 5px;
+}
